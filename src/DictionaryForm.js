@@ -6,7 +6,7 @@ import "./DictionaryForm.css";
 
 export default function DictionaryForm() {
 	const [keyword, setKeyword] = useState(null);
-	const [results, setResults] = useState({});
+	const [results, setResults] = useState(null);
 
 	function handleResponse(response) {
 		setResults(response.data[0]);
