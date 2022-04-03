@@ -7,13 +7,11 @@ export default function DictionaryForm() {
 
 	function updateKeyword(event) {
 		event.preventDefault();
-		console.log(event);
 		setKeyword(event.target.value);
 	}
 
 	function search(event) {
 		event.preventDefault();
-		console.log(event);
 		alert(`Searching for ${keyword} definition...`);
 	}
 
