@@ -1,3 +1,4 @@
+import React from "react";
 import DictionaryForm from "./DictionaryForm";
 import "./App.css";
 

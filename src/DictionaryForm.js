@@ -4,13 +4,17 @@ import "./DictionaryForm.css";
 
 export default function DictionaryForm() {
 	const [keyword, setKeyword] = useState(null);
-	function search(event) {
-		event.preventdefault();
-		alert(`Searching for ${keyword} definition...`);
-	}
 
 	function updateKeyword(event) {
+		event.preventDefault();
+		console.log(event);
 		setKeyword(event.target.value);
+	}
+
+	function search(event) {
+		event.preventDefault();
+		console.log(event);
+		alert(`Searching for ${keyword} definition...`);
 	}
 
 	return (
@@ -30,6 +34,7 @@ export default function DictionaryForm() {
 					<div className="col-3">
 						<button
 							type="submit"
+							title="Submit"
 							className="btn btn-primary">
 							Search
 						</button>
