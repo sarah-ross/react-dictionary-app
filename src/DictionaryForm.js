@@ -1,9 +1,14 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 import "./DictionaryForm.css";
 
 export default function DictionaryForm() {
 	const [keyword, setKeyword] = useState(null);
+
+	function handleResponse(response) {
+		console.log(response.data[0]);
+	}
 
 	function updateKeyword(event) {
 		event.preventDefault();
@@ -12,7 +17,9 @@ export default function DictionaryForm() {
 
 	function search(event) {
 		event.preventDefault();
-		alert(`Searching for ${keyword} definition...`);
+
+		let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+		axios.get(apiUrl).then(handleResponse);
 	}
 
 	return (
