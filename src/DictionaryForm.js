@@ -43,7 +43,7 @@ export default function DictionaryForm() {
 						<button
 							type="submit"
 							title="Submit"
-							className="btn btn-primary shadow">
+							className="btn btn-primary">
 							Search
 						</button>
 					</div>

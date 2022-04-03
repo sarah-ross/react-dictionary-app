@@ -13,18 +13,7 @@ export default function App() {
 				</main>
 			</div>
 			<footer className="text-center mt-4">
-				Open-source code by{" "}
-				<a
-					href="https://www.sarah-codes.com/"
-					target="_blank">
-					Sarah Ross
-				</a>{" "}
-				available on{" "}
-				<a
-					href="https://github.com/sarah-ross/react-dictionary-app"
-					target="_blank">
-					Github
-				</a>{" "}
+				Open-source code by Sarah Ross available on Github
 				👩‍💻
 			</footer>
 		</div>
