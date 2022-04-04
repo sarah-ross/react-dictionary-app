@@ -5,15 +5,26 @@ import "./App.css";
 export default function App() {
 	return (
 		<div className="App">
-			<div className="container-fluid pb-4">
+			<div className="container-fluid">
 				<h1>React Dictionary App</h1>
 				<h3 className="mt-5">Look up a word:</h3>
-				<main>
-					<DictionaryForm />
-				</main>
 			</div>
-			<footer className="text-center mt-4">
-				Open-source code by Sarah Ross available on Github
+			<main>
+				<DictionaryForm />
+			</main>
+			<footer className="text-center">
+				Open-source code by{" "}
+				<a
+					href="https://www.sarah-codes.com/"
+					className="portfolioLink">
+					Sarah Ross
+				</a>{" "}
+				available on{" "}
+				<a
+					href="https://github.com/sarah-ross/react-dictionary-app"
+					className="githubLink">
+					Github
+				</a>{" "}
 				👩‍💻
 			</footer>
 		</div>
