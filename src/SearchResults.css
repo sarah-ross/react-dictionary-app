@@ -18,3 +18,10 @@
 	background-clip: text;
 	color: transparent;
 }
+
+@media (max-width: 414px) {
+	.SearchResults {
+		margin-top: 80px;
+		padding-left: 30px;
+	}
+}
