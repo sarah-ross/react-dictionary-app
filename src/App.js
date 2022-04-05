@@ -7,7 +7,7 @@ export default function App() {
 		<div className="App">
 			<div className="container-fluid">
 				<h1>React Dictionary App</h1>
-				<h3 className="mt-5">Look up a word:</h3>
+				<h3>Look up a word:</h3>
 			</div>
 			<main>
 				<DictionaryForm />

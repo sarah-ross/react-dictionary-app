@@ -1,5 +1,6 @@
 .DictionaryForm form {
-	margin: -82px 66px;
+	margin-top: -97px;
+	margin-left: 66px;
 }
 
 .DictionaryForm button {
@@ -15,9 +16,32 @@
 .DictionaryForm button:hover {
 	background-color: white;
 	border: 2px solid white;
-	color: rgb(252, 34, 29);
+	color: rgb(253, 146, 61);
 }
 
 .DictionaryForm .searchBox {
 	padding: 10px 15px;
+}
+
+@media (max-width: 414px) {
+	.DictionaryForm form {
+		margin-left: 28px;
+	}
+
+	.DictionaryForm button {
+		margin-left: -5px;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 390px) {
+	.DictionaryForm form {
+		margin-left: 24px;
+	}
+}
+
+@media (max-width: 360px) {
+	.DictionaryForm form {
+		margin-left: 16px;
+	}
 }

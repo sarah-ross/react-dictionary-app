@@ -1,16 +1,26 @@
-.App {
-	font-family: "Poppins", sans-serif;
-	color: rgb(16, 12, 96);
-}
-
 .App .container-fluid {
+	font-family: "Poppins", sans-serif;
+	padding-bottom: 98px;
 	background: linear-gradient(
 		109.6deg,
 		rgb(33, 25, 180) 11.2%,
 		rgb(253, 29, 29) 55.2%,
 		rgb(252, 176, 69) 91.1%
 	);
-	padding-bottom: 90px;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .App h1,
@@ -27,10 +37,11 @@ h3 {
 
 .App h3 {
 	font-size: 24px;
+	margin: 73px 0 13px;
 }
 
 .App footer {
-	margin-top: 134px;
+	margin-top: 156px;
 }
 
 .App footer a {
@@ -54,4 +65,50 @@ h3 {
 
 .App .githubLink:hover {
 	color: rgb(33, 25, 180);
+}
+
+@media (max-width: 414px) {
+	.App h1,
+	h3 {
+		padding-left: 15px;
+	}
+
+	.App h1 {
+		font-size: 46px;
+	}
+
+	.App footer {
+		margin-top: 64px;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 390px) {
+	.App h1,
+	h3 {
+		padding-left: 12px;
+	}
+
+	.App h1 {
+		font-size: 42px;
+	}
+}
+
+@media (max-width: 360px) {
+	.App h1,
+	h3 {
+		padding-left: 5px;
+	}
+
+	.App h1 {
+		font-size: 36px;
+	}
+
+	.App h3 {
+		font-size: 22px;
+	}
+
+	.App footer {
+		font-size: 11px;
+	}
 }

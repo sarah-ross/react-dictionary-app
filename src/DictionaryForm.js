@@ -29,7 +29,7 @@ export default function DictionaryForm() {
 		<div className="DictionaryForm">
 			<form onSubmit={search}>
 				<div className="row">
-					<div className="col-6">
+					<div className="col">
 						<input
 							type="search"
 							title="Search"
@@ -39,7 +39,7 @@ export default function DictionaryForm() {
 							onChange={updateKeyword}
 						/>
 					</div>
-					<div className="col-3">
+					<div className="col-4">
 						<button
 							type="submit"
 							title="Submit"
