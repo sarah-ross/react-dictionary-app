@@ -1,6 +1,9 @@
-.App .container-fluid {
+.App {
 	font-family: "Poppins", sans-serif;
-	padding-bottom: 98px;
+}
+
+.App .container-fluid {
+	padding-bottom: 100px;
 	background: linear-gradient(
 		109.6deg,
 		rgb(33, 25, 180) 11.2%,
@@ -41,7 +44,7 @@ h3 {
 }
 
 .App footer {
-	margin-top: 156px;
+	margin-top: 70px;
 }
 
 .App footer a {
@@ -92,6 +95,10 @@ h3 {
 
 	.App h1 {
 		font-size: 42px;
+	}
+
+	.App footer {
+		font-size: 12px;
 	}
 }
 
