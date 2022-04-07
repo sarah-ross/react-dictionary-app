@@ -8,10 +8,10 @@ export default function App() {
 			<div className="container-fluid">
 				<h1>React Dictionary App</h1>
 				<h3>Look up a word:</h3>
+				<main>
+					<DictionaryForm />
+				</main>
 			</div>
-			<main>
-				<DictionaryForm />
-			</main>
 			<footer className="text-center">
 				Open-source code by{" "}
 				<a

@@ -3,7 +3,7 @@
 }
 
 .App .container-fluid {
-	padding-bottom: 100px;
+	padding-bottom: 90px;
 	background: linear-gradient(
 		109.6deg,
 		rgb(33, 25, 180) 11.2%,
@@ -35,16 +35,16 @@ h3 {
 .App h1 {
 	font-size: 50px;
 	font-weight: 700;
-	padding-top: 120px;
+	padding-top: 125px;
 }
 
 .App h3 {
 	font-size: 24px;
-	margin: 73px 0 13px;
+	margin: 72px 0 15px;
 }
 
 .App footer {
-	margin-top: 70px;
+	margin-top: 20px;
 }
 
 .App footer a {

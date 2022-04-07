@@ -1,7 +1,6 @@
 .DictionaryForm form {
-	margin-top: -100px;
-	margin-left: 66px;
 	max-width: 800px;
+	margin-left: 54px;
 }
 
 .DictionaryForm button {
@@ -22,6 +21,12 @@
 
 .DictionaryForm .searchBox {
 	padding: 10px 15px;
+}
+
+.DictionaryForm .container {
+	background-color: white;
+	padding: 40px;
+	border-radius: 6px;
 }
 
 @media (max-width: 414px) {
