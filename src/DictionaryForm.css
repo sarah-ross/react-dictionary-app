@@ -31,23 +31,27 @@
 
 @media (max-width: 414px) {
 	.DictionaryForm form {
-		margin-left: 28px;
+		margin-left: 18px;
 	}
 
 	.DictionaryForm button {
 		margin-left: -5px;
 		padding: 10px;
 	}
+
+	.DictionaryForm .container {
+		margin-left: -13px;
+	}
 }
 
 @media (max-width: 390px) {
 	.DictionaryForm form {
-		margin-left: 24px;
+		margin-left: 14px;
 	}
 }
 
 @media (max-width: 360px) {
 	.DictionaryForm form {
-		margin-left: 16px;
+		margin-left: 6px;
 	}
 }
