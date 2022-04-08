@@ -24,8 +24,8 @@
 }
 
 .DictionaryForm .container {
-	background-color: white;
-	padding: 40px;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 60px;
 	border-radius: 6px;
 }
 
@@ -44,7 +44,7 @@
 	}
 }
 
-@media (max-width: 390px) {
+@media (max-width: 393px) {
 	.DictionaryForm form {
 		margin-left: 14px;
 	}

@@ -3,7 +3,7 @@
 }
 
 .App .container-fluid {
-	padding-bottom: 90px;
+	padding-bottom: 80px;
 	background: linear-gradient(
 		109.6deg,
 		rgb(33, 25, 180) 11.2%,
@@ -33,18 +33,18 @@ h3 {
 }
 
 .App h1 {
-	font-size: 50px;
+	font-size: 52px;
 	font-weight: 700;
-	padding-top: 125px;
+	padding-top: 135px;
 }
 
 .App h3 {
-	font-size: 24px;
+	font-size: 26px;
 	margin: 72px 0 15px;
 }
 
 .App footer {
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 .App footer a {
@@ -81,13 +81,12 @@ h3 {
 	}
 
 	.App footer {
-		margin-top: 64px;
 		margin-bottom: 20px;
-		font-size: 14px;
+		font-size: 13px;
 	}
 }
 
-@media (max-width: 390px) {
+@media (max-width: 393px) {
 	.App h1,
 	h3 {
 		padding-left: 14px;
