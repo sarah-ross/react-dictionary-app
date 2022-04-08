@@ -73,6 +73,7 @@ h3 {
 @media (max-width: 596px) {
 	footer {
 		margin-top: 10px;
+		font-size: 13px;
 	}
 }
 
@@ -88,7 +89,6 @@ h3 {
 
 	.App footer {
 		margin-bottom: 20px;
-		font-size: 13px;
 	}
 }
 
