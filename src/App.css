@@ -70,6 +70,12 @@ h3 {
 	color: rgb(33, 25, 180);
 }
 
+@media (max-width: 596px) {
+	footer {
+		margin-top: 10px;
+	}
+}
+
 @media (max-width: 414px) {
 	.App h1,
 	h3 {
