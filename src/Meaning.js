@@ -15,16 +15,17 @@ export default function Meaning(props) {
 			) {
 				return (
 					<div key={index}>
-						<p>
+						<div>
 							Definition: {definition.definition}
 							<br />
 							<em>Usage example: {definition.example}</em>
 							<br />
 							<Synonyms synonyms={definition.synonyms} />
-						</p>
+						</div>
 					</div>
 				);
 			})}
+			<Synonyms synonyms={props.meaning.synonyms} />
 		</div>
 	);
 }
