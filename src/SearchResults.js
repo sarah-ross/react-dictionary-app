@@ -7,7 +7,7 @@ export default function SearchResults(props) {
 	if (props.results) {
 		return (
 			<div className="SearchResults">
-				<div className="container">
+				<div className="container results-wrapper shadow">
 					<h2>{props.results.word}</h2>
 					{props.results.meanings.map(function (
 						meaning,
