@@ -9,7 +9,7 @@ export default function App() {
 				<h1>React Dictionary App</h1>
 				<h3>Look up a word:</h3>
 				<main>
-					<DictionaryForm />
+					<DictionaryForm defaultKeyword="hello" />
 				</main>
 			</div>
 			<footer className="text-center">
