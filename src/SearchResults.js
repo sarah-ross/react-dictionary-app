@@ -8,7 +8,7 @@ export default function SearchResults(props) {
 	if (props.results) {
 		return (
 			<div className="SearchResults">
-				<div className="container shadow">
+				<div className="container">
 					<section>
 						<h2>{props.results.word}</h2>
 						{props.results.phonetics.map(function (

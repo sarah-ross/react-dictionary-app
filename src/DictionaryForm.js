@@ -21,7 +21,7 @@ export default function DictionaryForm(props) {
 	}
 
 	function search() {
-		// api documentation link: https://dictionaryapi.dev/
+		// api documentation: https://dictionaryapi.dev/
 		let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
 		axios.get(apiUrl).then(handleResponse);
 	}
@@ -62,7 +62,7 @@ export default function DictionaryForm(props) {
 					</div>
 				</form>
 				<small className="searchSuggestions">
-					Suggestions: travel, book, desk, wine, forest...
+					Try: travel, book, forest, wine...
 				</small>
 				<SearchResults results={results} />
 			</div>

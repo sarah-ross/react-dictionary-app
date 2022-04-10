@@ -1,10 +1,10 @@
 .SearchResults {
-	margin-top: 90px;
+	margin-top: 83px;
 }
-
 .SearchResults h2 {
-	font-size: 46px;
-	font-weight: 700;
+	font-size: 48px;
+	font-weight: 800;
+	letter-spacing: 1px;
 	padding-bottom: 15px;
 	background: linear-gradient(
 		109.6deg,
@@ -20,7 +20,11 @@
 
 @media (max-width: 414px) {
 	.SearchResults {
-		margin-top: 80px;
-		padding-left: 30px;
+		margin-top: 76px;
+		padding-left: 28px;
+	}
+
+	.SearchResults h2 {
+		font-size: 40px;
 	}
 }

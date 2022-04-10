@@ -31,11 +31,12 @@
 .DictionaryForm .container {
 	background-color: rgba(255, 255, 255, 0.9);
 	padding: 60px;
-	border-radius: 2px 62px 2px 62px;
+	border-radius: 2px 83px 2px 83px;
 }
 
 @media (max-width: 414px) {
-	.DictionaryForm form {
+	.DictionaryForm form,
+	.searchSuggestions {
 		margin-left: 18px;
 	}
 
@@ -50,13 +51,15 @@
 }
 
 @media (max-width: 393px) {
-	.DictionaryForm form {
+	.DictionaryForm form,
+	.searchSuggestions {
 		margin-left: 14px;
 	}
 }
 
 @media (max-width: 360px) {
-	.DictionaryForm form {
+	.DictionaryForm form,
+	.searchSuggestions {
 		margin-left: 6px;
 	}
 }
