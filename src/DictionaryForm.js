@@ -35,7 +35,7 @@ export default function DictionaryForm(props) {
 
 		// api documentation: https://www.pexels.com/api/documentation/
 		const pexelsApiKey = `563492ad6f91700001000001c477b8ebce794f00b6277967a70a61ce`;
-		const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
+		const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
 
 		const headers = {
 			Authorization: `Bearer ${pexelsApiKey}`,
@@ -80,9 +80,6 @@ export default function DictionaryForm(props) {
 						</div>
 					</div>
 				</form>
-				<small className="searchSuggestions">
-					Try: travel, book, forest, wine...
-				</small>
 				<div className="container">
 					<SearchResults results={results} />
 					<Photos photos={photos} />

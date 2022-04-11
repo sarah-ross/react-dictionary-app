@@ -29,11 +29,11 @@
 .App h1,
 .subHeading {
 	color: white;
-	padding-left: 60px;
+	text-align: center;
 }
 
 .App h1 {
-	font-size: 56px;
+	font-size: 62px;
 	font-weight: 700;
 	padding-top: 140px;
 }
@@ -41,6 +41,7 @@
 .App .subHeading {
 	font-size: 26px;
 	margin-top: 78px;
+	margin-right: 518px;
 }
 
 .App footer {
@@ -68,6 +69,25 @@
 
 .App .githubLink:hover {
 	color: rgb(33, 25, 180);
+}
+
+@media (max-width: 871px) {
+	.App h1,
+	.subHeading {
+		text-align: left;
+		padding-left: 25px;
+	}
+
+	.App h1 {
+		font-size: 58px;
+	}
+}
+
+@media (max-width: 768px) {
+	.App .subHeading {
+		margin: unset;
+		margin-top: 78px;
+	}
 }
 
 @media (max-width: 596px) {

@@ -1,5 +1,6 @@
 .DictionaryForm form {
-	max-width: 900px;
+	max-width: 850px;
+	margin: 0 auto;
 }
 
 .DictionaryForm button {
@@ -18,22 +19,16 @@
 	color: rgb(253, 146, 61);
 }
 
-.DictionaryForm .searchSuggestions,
-.searchBox,
+.DictionaryForm .searchBox,
 button {
-	margin-left: 60px;
+	margin-left: 64px;
 }
 
 .DictionaryForm .searchBox {
 	padding: 10px 15px;
 }
 
-.DictionaryForm .searchSuggestions {
-	color: white;
-}
-
 .DictionaryForm .container {
-	margin: 0 auto;
 	max-width: 980px;
 	margin-top: 83px;
 	background-color: rgba(255, 255, 255, 0.9);
@@ -53,7 +48,18 @@ button {
 	}
 }
 
+@media (max-width: 871px) {
+	.DictionaryForm form {
+		margin: 10px 0 0 -38px;
+	}
+}
+
 @media (max-width: 414px) {
+	.DictionaryForm form {
+		margin: unset;
+		margin-top: 10px;
+	}
+
 	.DictionaryForm .searchBox {
 		margin-left: 15px;
 	}
