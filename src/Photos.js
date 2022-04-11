@@ -16,6 +16,7 @@ export default function Photos(props) {
 									rel="noreferrer">
 									<img
 										src={photo.src.landscape}
+										alt={photo.alt}
 										className="img-fluid shadow"
 									/>
 								</a>
