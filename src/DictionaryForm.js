@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Photos from "./Photos";
 import SearchResults from "./SearchResults";
 
 import "./DictionaryForm.css";
@@ -10,13 +11,14 @@ export default function DictionaryForm(props) {
 	);
 	const [results, setResults] = useState(null);
 	const [loaded, setLoaded] = useState(false);
+	const [photos, setPhotos] = useState(null);
 
 	function handleDictionaryResponse(response) {
 		setResults(response.data[0]);
 	}
 
 	function handlePexelsResponse(response) {
-		console.log(response);
+		setPhotos(response.data.photos);
 	}
 
 	function updateKeyword(event) {
@@ -28,14 +30,12 @@ export default function DictionaryForm(props) {
 		// api documentation: https://dictionaryapi.dev/
 		const apiDictionaryUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
 		axios
-			.get(apiDictionaryUrl, {
-				headers: { Authorization: `Beaer ${pexelsApiKey}` },
-			})
+			.get(apiDictionaryUrl)
 			.then(handleDictionaryResponse);
 
 		// api documentation: https://www.pexels.com/api/documentation/
 		const pexelsApiKey = `563492ad6f91700001000001c477b8ebce794f00b6277967a70a61ce`;
-		const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+		const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
 
 		const headers = {
 			Authorization: `Bearer ${pexelsApiKey}`,
@@ -83,7 +83,10 @@ export default function DictionaryForm(props) {
 				<small className="searchSuggestions">
 					Try: travel, book, forest, wine...
 				</small>
-				<SearchResults results={results} />
+				<div className="container">
+					<SearchResults results={results} />
+					<Photos photos={photos} />
+				</div>
 			</div>
 		);
 	} else {

@@ -1,7 +1,5 @@
-.DictionaryForm form,
-.searchSuggestions {
-	max-width: 800px;
-	margin-left: 54px;
+.DictionaryForm form {
+	max-width: 900px;
 }
 
 .DictionaryForm button {
@@ -20,6 +18,12 @@
 	color: rgb(253, 146, 61);
 }
 
+.DictionaryForm .searchSuggestions,
+.searchBox,
+button {
+	margin-left: 60px;
+}
+
 .DictionaryForm .searchBox {
 	padding: 10px 15px;
 }
@@ -29,38 +33,53 @@
 }
 
 .DictionaryForm .container {
-	max-width: 960px;
+	margin: 0 auto;
+	max-width: 980px;
+	margin-top: 83px;
 	background-color: rgba(255, 255, 255, 0.9);
 	padding: 60px;
 	border-radius: 2px 83px 2px 83px;
+	animation: fadeInAnimation ease 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 @media (max-width: 414px) {
-	.DictionaryForm form,
-	.searchSuggestions {
-		margin-left: 18px;
+	.DictionaryForm .searchBox {
+		margin-left: 15px;
 	}
 
 	.DictionaryForm button {
-		margin-left: -5px;
-		padding: 10px;
+		font-size: 14px;
+		padding: 10px 20px;
+		margin-left: 4px;
+	}
+
+	.DictionaryForm .searchSuggestions {
+		margin-left: 15px;
 	}
 
 	.DictionaryForm .container {
-		margin-left: -13px;
-	}
-}
-
-@media (max-width: 393px) {
-	.DictionaryForm form,
-	.searchSuggestions {
-		margin-left: 14px;
+		padding: 28px;
+		margin-top: 62px;
 	}
 }
 
 @media (max-width: 360px) {
-	.DictionaryForm form,
-	.searchSuggestions {
-		margin-left: 6px;
+	.DictionaryForm form {
+		margin-left: -7px;
+	}
+
+	.DictionaryForm .container {
+		padding: 24px;
 	}
 }

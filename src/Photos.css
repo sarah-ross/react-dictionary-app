@@ -1,0 +1,14 @@
+.Photos {
+	margin-top: 52px;
+	margin-bottom: 28px;
+}
+
+.Photos img {
+	border-radius: 4px;
+	margin-bottom: 25px;
+	transition: all 275ms ease-in-out;
+}
+
+.Photos img:hover {
+	border: 2px solid rgb(253, 29, 29);
+}
