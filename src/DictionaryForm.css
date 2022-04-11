@@ -29,6 +29,7 @@
 }
 
 .DictionaryForm .container {
+	max-width: 960px;
 	background-color: rgba(255, 255, 255, 0.9);
 	padding: 60px;
 	border-radius: 2px 83px 2px 83px;

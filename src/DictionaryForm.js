@@ -11,8 +11,12 @@ export default function DictionaryForm(props) {
 	const [results, setResults] = useState(null);
 	const [loaded, setLoaded] = useState(false);
 
-	function handleResponse(response) {
+	function handleDictionaryResponse(response) {
 		setResults(response.data[0]);
+	}
+
+	function handlePexelsResponse(response) {
+		console.log(response);
 	}
 
 	function updateKeyword(event) {
@@ -22,8 +26,23 @@ export default function DictionaryForm(props) {
 
 	function search() {
 		// api documentation: https://dictionaryapi.dev/
-		let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
-		axios.get(apiUrl).then(handleResponse);
+		const apiDictionaryUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+		axios
+			.get(apiDictionaryUrl, {
+				headers: { Authorization: `Beaer ${pexelsApiKey}` },
+			})
+			.then(handleDictionaryResponse);
+
+		// api documentation: https://www.pexels.com/api/documentation/
+		const pexelsApiKey = `563492ad6f91700001000001c477b8ebce794f00b6277967a70a61ce`;
+		const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+
+		const headers = {
+			Authorization: `Bearer ${pexelsApiKey}`,
+		};
+		axios
+			.get(pexelsApiUrl, { headers: headers })
+			.then(handlePexelsResponse);
 	}
 
 	function handleSubmit(event) {
